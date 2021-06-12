@@ -81,5 +81,26 @@ color: #FFFFFF;
 }
 
 .start-screen .btn-scroll {
-    
+    background: #7B7E85;
+    opacity: 0.4;   
+}
+
+.main-content .main-content-header{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #20242D;
+
+}
+.main-content .main-content-article {
+color: #20242D;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
 }
