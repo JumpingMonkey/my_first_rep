@@ -104,3 +104,27 @@ line-height: 24px;
 letter-spacing: 0em;
 text-align: left;
 }
+
+.footer {
+    background: #20242D;
+}
+
+.footer .navigation a{
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+text-decoration: none;
+
+}
+
+.footer .navigation .active {
+    color: #FF7129;
+    }
+
+.footer .footer-bottom {
+    color: #7B7E85;
+}
