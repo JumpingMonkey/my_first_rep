@@ -290,10 +290,21 @@ ul {
     color: #ff7129;
 }
 
+.footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(123, 126, 133, 0.3);
+}
+
 .footer .footer-bottom a {
     color: #7b7e85;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 footer .footer-bottom span {
     color: #7b7e85;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
