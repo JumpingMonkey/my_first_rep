@@ -62,14 +62,12 @@ ul {
     margin-right: 56px;
     position: relative;
     padding-left: 20px;
-    
 }
 
 .header .contacts li svg {
     position: absolute;
     top: 4px;
     left: 0px;
-
 }
 .header .contacts li:last-child {
     margin-right: 0px;
@@ -146,19 +144,18 @@ ul {
 }
 
 .header .navigation .active::after {
-content: "";
-display: block;
-width: 10px;
-height: 1px;
-background-color: #ff7129;
-position: absolute;
-top: 9px;
-right: 0px;
-
+    content: '';
+    display: block;
+    width: 10px;
+    height: 1px;
+    background-color: #ff7129;
+    position: absolute;
+    top: 9px;
+    right: 0px;
 }
 
 .header .navigation .active::before {
-    content: "";
+    content: '';
     display: block;
     width: 10px;
     height: 1px;
@@ -166,8 +163,7 @@ right: 0px;
     position: absolute;
     top: 9px;
     left: 0px;
-    
-    }
+}
 
 .start-screen {
     background: #777;
@@ -177,12 +173,10 @@ right: 0px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    
-    
 }
 
 .start-screen .solar {
-    position:absolute;
+    position: absolute;
     font-family: Gilroy;
     font-size: 120px;
     font-style: normal;
@@ -268,9 +262,7 @@ right: 0px;
     border-radius: 50%;
 }
 
- 
-
-.main-info-content  .main-content-header {
+.main-info-content .main-content-header {
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -288,8 +280,8 @@ right: 0px;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    
 }
+
 .main-content {
     padding-top: 132px;
     padding-bottom: 115px;
@@ -397,7 +389,219 @@ footer .footer-bottom span {
     padding-top: 24px;
     padding-bottom: 24px;
 }
-/* 
-.btn-pop-up {
 
-} */
+.calculator-popap {
+    /* display: none; */
+    position: fixed;
+    width: 800px;
+    height: 596px;
+    background-color: #ffffff;
+    padding-top: 28px;
+    padding-right: 58px;
+    padding-left: 58px;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -300px;
+}
+
+.calculator-popap .pop-up-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.calculator-popap .title {
+    position: relative;
+    font-family: Gilroy;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 97%;
+    color: #20242d;
+    margin-top: 95px;
+}
+
+.calculator-popap .description {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #20242d;
+    margin-top: 16px;
+}
+
+.calculator-popap .calc-pop-form {
+    margin-top: 56px;
+}
+
+.calculator-popap .calc-pop-form .pop-range .label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculator-popap .calc-pop-form .label span {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #20242d;
+}
+
+.calculator-popap .calc-pop-form .pop-range label {
+    display: block;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7b7e85;
+    padding-right: 20px;
+}
+
+.calculator-popap .calc-pop-form .range-line {
+    margin-top: 31px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+.calculator-popap .calc-pop-form .range-line::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ff7129;
+    cursor: pointer;
+}
+
+.calculator-popap .calc-pop-form .range-line::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ff7129;
+    cursor: pointer;
+}
+
+.calculator-popap .selects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.calculator-popap .selects-item label {
+    display: block;
+}
+
+.calculator-popap .selects-item {
+    flex: 1;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7b7e85;
+}
+
+.calculator-popap .selects-item select {
+    width: 100%;
+    height: 52px;
+    margin-top: 15px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7b7e85;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('../img/arrow.png');
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+    padding-left: 24px;
+}
+.calculator-popap .selects-item select::-ms-expand {
+    display: none;
+}
+.calculator-popap .selects-item select:hover {
+    border-color: #ff7129;
+}
+.calculator-popap .selects-item select:focus {
+    border-color: #ff7129;
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    outline: none;
+}
+
+.calculator-popap .selects-item select option:focus {
+    border-color: #ff7129;
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+}
+
+.calculator-popap .selects-item select option {
+    font-weight: normal;
+    border-color: #ff7129;
+}
+
+.calculator-popap .selects-item:last-child {
+    margin-left: 30px;
+}
+
+.calculator-popap .btn {
+    background: #ff7129;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    width: 188px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 72px;
+    margin-top: 56px;
+}
+
+.calculator-popap .bg-text {
+    position: absolute;
+    font-family: Gilroy;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116px;
+    letter-spacing: 0em;
+    text-align: left;
+    -webkit-text-stroke: 1px rgb(122, 122, 122, 0.2);
+    text-transform: uppercase;
+    color: transparent;
+    top: -70px;
+    left: -42px;
+}
