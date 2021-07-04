@@ -391,7 +391,7 @@ footer .footer-bottom span {
 }
 
 .calculator-popap {
-    /* display: none; */
+    display: none;
     position: fixed;
     width: 800px;
     height: 596px;
@@ -406,11 +406,35 @@ footer .footer-bottom span {
     margin-top: -300px;
 }
 
+@keyframes fadeIn {
+    0% {
+        transform: translate(0%, -2000px);
+    }
+    50% {
+        transform: translate( 0%, 50%);
+    }
+    100% {
+        transform: translate( 0%, 0%);
+    }
+}
+
+.calculator-popap-show {
+display: block;
+animation-name: fadeIn;
+animation-duration: 1s;
+}
+
+
+
 .calculator-popap .pop-up-close {
     position: absolute;
     top: 25px;
     right: 25px;
+    cursor: pointer;
 }
+
+
+
 
 .calculator-popap .title {
     position: relative;
@@ -421,6 +445,18 @@ footer .footer-bottom span {
     line-height: 97%;
     color: #20242d;
     margin-top: 95px;
+    padding-left: 16px;
+}
+
+.calculator-popap .title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 52px;
+    background-color: #ff7129;
+    top:-4px;
+    left: 0px;
 }
 
 .calculator-popap .description {
@@ -441,6 +477,18 @@ footer .footer-bottom span {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.calculator-popap .calc-pop-form .pop-range .label label {
+    position: relative;
+}
+
+
+.calculator-popap .calc-pop-form .pop-range .label label::after {
+content: url(../img/info_svg_ico.svg);
+position: absolute;
+top: 3px;
+right: -3px;
 }
 
 .calculator-popap .calc-pop-form .label span {

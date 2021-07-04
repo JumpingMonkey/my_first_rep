@@ -1,8 +1,14 @@
 let btn = document.querySelector('.btn-pop-up');
+let calculatorPopUp = document.querySelector('.calculator-popap');
 btn.addEventListener("click", function(){
-    console.log(btn.classList.contains('btn'));
+    calculatorPopUp.classList.add('calculator-popap-show');
 });
 
+let calcPopUpClose = document.querySelector('.calculator-popap img');
+
+calcPopUpClose.addEventListener("click", function(){
+    calculatorPopUp.classList.remove('calculator-popap-show');
+});
 
 var slider = document.querySelector('.range-line')
             var output = document.querySelector('#range-value')
